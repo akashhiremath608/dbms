@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.container {
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  
+}
+
+html,
+body {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+body {
+  font: 16px 'Roboto', sans-serif;
+  width: 100%;
+  text-align: center;
+  color: #555;
+  background: #ddd;
+  background-image: url(images/btrain.jpg) ;
+  background-position: center;
+  background-size: cover;
+  
+}
+nav{
+  height: 50px;
+  width: 100%;
+  padding: 20px 0;
+  background-color:transparent;
+}
+.nova{
+  width: 1200px;
+  max-width: 85%;
+  margin: 0 auto;
+}
+nav ul{
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px 6px;
+}
+nav ul li a{
+  color: #fff;
+  padding: 10px;
+  text-transform: uppercase;
+  margin-left: 30px;
+}
+nav ul li a:hover, a.active{
+  background-color: #52AF3A;
+  border-radius: 5px;
+}
+
+.form {
+    padding: 35px 0;
+    border: 1px solid rgb(255, 253, 253);
+    /*background: #eee;*/
+    min-width: 100%;
+    margin: 0 auto;
+    background-color: rgb(0,0,0,0.5);
+  }
+  button,
+  input,
+  select,
+  textarea {
+    font-family: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+    outline: 0;
+  }
+  
+  button::-moz-focus-inner,
+  input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+  input[type=text] {
+    width: 80%;
+    padding: 10px 10px 12px 70px;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(10, 10, 10);
+    background-color: rgb(235, 229, 229);
+    box-shadow: 0 5px 10px 0 rgb(178, 175, 175);
+  }
+  .field {
+    display: inline-block;
+    position: relative;
+    margin: 10px auto;
+  }
+  
+  .col-centered {
+    float: none;
+  }
+  
+  .field input {
+    transition: .1s all linear;
+    font-size: 20px;
+    font-family: Monospace;
+    text-align:start;
+  }
+  .field label {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: normal;
+    position:absolute;
+    pointer-events: none;
+    left: 5%;
+    top: 2px;
+    text-align: center;
+  }
+  h1 {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 10px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    color: #131313;
+    /*background-color: #e7e5e4;*/
+    color: #FFF;
+    letter-spacing: .07em;
+    text-shadow: 1px -1px 0 #767676;
+    margin-top: 10px;
+  }
+  caption {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 25px;
+    padding: 20px 5px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fffffd;
+    background-color: rgb(71, 68, 68);
+    letter-spacing: .2em;
+    text-shadow: 1px -1px 0 #d6cb53;
+    margin-top: 10px;
+  }
+  #trainClass {
+    margin: 4px;
+    float: center;
+    background-color:transparent ;
+    margin-left:45%;
+
+  }
+  
+  #trainClass label {
+    width: 60px;
+    margin: 4px;
+    background-color: rgb(0,0,0,0.5);
+    border-radius: 4px;
+    border: 1px solid #D0D0D0;
+    overflow: auto;
+    cursor: pointer;
+  }
+  #trainClass label span {
+    text-align: center;
+    font-size: 25px;
+    padding: 8px 0px;
+    display:grid;
+    width:100%;
+  }
+  
+  #trainClass label input {
+    position:relative ;
+    top: -20px;
+    opacity: 0;
+    /**hides the radio button**/
+  }
+  #trainClass input:checked + span {
+    background-color: #404040;
+    color: #F7F7F7;
+  }
+  
+  #trainClass .yellow {
+    background-color: #FFCC00;
+    color: #333;
+  }
+  
+  #trainClass .blue {
+    background-color: #00BFFF;
+    color: #333;
+  }
+  
+  #trainClass .pink {
+    background-color: #FF99FF;
+    color: #333;
+  }
+  
+  #trainClass .green {
+    background-color: #A3D900;
+    color: #333;
+  }
+  
+  #trainClass .purple {
+    background-color: #B399FF;
+    color: #333;
+  }
+  
+  #bfoot {
+    position: relative;
+    top: 30px;
+  }
+  
+  .member tr:hover {
+    color: black;
+    cursor: pointer;
+  }
+  
+  .selected {
+    background-color: rgba(41, 103, 182, 0.89);
+    color: #FFF;
+  }
+  
+  .table th {
+    text-align: center;
+  }
+  #selectclass {
+    position: absolute;
+    left: 30%;
+    width: 40%;
+    height: 85%;
+    top: 10%;
+    z-index: 10;
+    color: brown;
+    background-color: rgb(0, 0, 0,0.5);
+  }
+  
+  .invis {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0.5;
+    background-color: rgba(0, 0, 0, 0.2);
+    min-width: 370px;
+  }
+  
+  #selectclass > h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px 5px;
+    text-align: center;
+    text-transform: uppercase;
+    /*  text-rendering: optimizeLegibility;*/
+    color: #171615;
+    background-color: rgb(193, 188, 188);
+    letter-spacing: .2em;
+    text-shadow: 0 5px 10px 0 #767676;
+    margin-top: 10px;
+  }
+  
+  
+  /**************   ticket  ********/
+  
+  #ticket {
+    width: 500px;
+    height: 250px;
+    border: 1px solid black;
+    text-transform: uppercase;
+    margin: 50px auto;
+    background: -webkit-linear-gradient(left, #ffffff, orange);
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  .pull-right {
+    padding: 15px;
+    text-align: right;
+    right: 10px;
+    font-size: 15px;
+  }
+  
+  .pull-left {
+    text-align: left;
+    left: 10px;
+    font-size: 15px;
+    padding: 15px;
+  }
+  
+  .trainno {
+    font-size: 60px;
+    padding: 15px;
+    font-family: monospace;
+  }
+  
+  .trainname {
+    font-size: 22px;
+    font-family: Verdana, Geneva, sans-serif;
+    padding: 10px 8px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .from {
+    font-family: Verdana, Geneva, sans-serif;
+    padding: 10px 10px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .to {
+    font-family: Verdana, Geneva, sans-serif;
+    padding: 10px 0px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  #barcodes {
+    width: 80%;
+    font-size: 25px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    margin: 10px auto;
+  }
+  
+  td {
+    width: 4px;
+    height: 30px;
+  }
+  
+  .compartment {
+    font-size: 25px;
+    padding: 10px;
+  }
+  
+  .seatno {
+    font-size: 25px;
+    padding: 10px;
+  }
+  
+  .final > h2 {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px 5px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fddc05;
+    /*background-color: #333;*/
+    letter-spacing: .2em;
+    text-shadow: 1px -1px 0 #767676;
+    margin-top: 10px;
+  }

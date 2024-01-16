@@ -1,0 +1,45 @@
+html{
+    scroll-behavior: smooth;
+  }
+  *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      list-style-type: none;
+    }
+   
+      .elem-group   .calculations{
+        margin: 10px 0;
+      }
+      .elem-group  .calculations p{
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+      
+      .inputs{
+        display: grid;
+        grid-template-columns: 4fr 4fr;
+        gap: 10px;
+        width: 100%;
+      }
+      .f-class{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .inp-width{
+        min-width: 100px;
+      }
+      .plus-minus-btn{
+        color: #3352F2;
+        font-size: 30px;
+        padding: 2px;
+        margin: 10px 10px 0px 0px;
+        word-spacing: 20px;
+        cursor: pointer;
+      }
+      .amount{
+        display: flex;
+       justify-content:space-between;
+      }

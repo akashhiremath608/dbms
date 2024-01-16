@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+body{
+  align-content: center;
+  overflow: hidden;
+  background-image: url(img/package.jpg);
+  background-size: cover;
+  
+}
+
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+  margin-top: 5%;
+}
+
+.price {
+  list-style-type: none;
+  box-shadow: 5px 5px 10px 0 #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.price .year {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 20px;
+}
+
+
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+
+
+.container{
+    width: 1500px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: transparent;
+    padding: 20px 0;
+}
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 6px;
+}
+nav ul a{
+    color: #000;
+    padding: 10px;
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+nav ul a:hover, a.active{
+    background-color: #52AF3A;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+  <header class="container">
+        <nav>
+            <ul>
+                <a href="Home.html">Home</a>
+                <a href="#">About Us</a>
+                <a href="contact.html">Contact</a>
+            </ul>
+        </nav>
+    </header>
+
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Basic</li>
+    <li class="year"> 999 / year</li>
+    <li >Number of free premium seat - 1 / year</li>
+    <li>Snacks + Soft Drinks</li>
+    <li>Entertainment limited Songs</li>
+    <li>-</li>
+    <li class="grey"><a href="#" class="button">Select</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color: #F79900;">Gold</li>
+    <li class="year"> 2499 / year</li>
+    <li>Number of free premium seat - 2 / year</li>
+    <li>Snacks + Food + Soft Drinks</li>
+    <li>Entertainment Limited Songs + Movies</li>
+    <li>-</li>
+    <li class="grey"><a href="#" class="button">Select</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header"  style="background-color: #6c767c">Premium</li>
+    <li class="year"> 4999 / year</li>
+    <li>Number of free premium seat - 5 / year</li>
+    <li>Unlimited Food </li>
+    <li>Unlimited Songs + Movies </li>
+    <li>Free Hotel Reservation</li>
+    <li class="grey"><a href="#" class="button">Select</a></li>
+  </ul>
+</div>
+
+</body>
+</html>
